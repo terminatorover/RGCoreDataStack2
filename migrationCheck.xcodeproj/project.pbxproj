@@ -25,6 +25,8 @@
 		28E45909199CFBFE00A7A5D7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28E458E4199CFBFD00A7A5D7 /* CoreData.framework */; };
 		28E45911199CFBFE00A7A5D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 28E4590F199CFBFE00A7A5D7 /* InfoPlist.strings */; };
 		28E45913199CFBFE00A7A5D7 /* migrationCheckTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E45912199CFBFE00A7A5D7 /* migrationCheckTests.m */; };
+		28E45921199D007C00A7A5D7 /* RGCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E45920199D007C00A7A5D7 /* RGCoreDataStack.m */; };
+		28E4592E199D06A500A7A5D7 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E4592D199D06A500A7A5D7 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,11 @@
 		28E4590E199CFBFE00A7A5D7 /* migrationCheckTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "migrationCheckTests-Info.plist"; sourceTree = "<group>"; };
 		28E45910199CFBFE00A7A5D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		28E45912199CFBFE00A7A5D7 /* migrationCheckTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = migrationCheckTests.m; sourceTree = "<group>"; };
+		28E4591F199D007C00A7A5D7 /* RGCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGCoreDataStack.h; sourceTree = "<group>"; };
+		28E45920199D007C00A7A5D7 /* RGCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGCoreDataStack.m; sourceTree = "<group>"; };
+		28E45922199D03D700A7A5D7 /* migrationCheck 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "migrationCheck 2.xcdatamodel"; sourceTree = "<group>"; };
+		28E4592C199D06A500A7A5D7 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		28E4592D199D06A500A7A5D7 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,12 +132,16 @@
 			children = (
 				28E458EF199CFBFD00A7A5D7 /* AppDelegate.h */,
 				28E458F0199CFBFD00A7A5D7 /* AppDelegate.m */,
+				28E4591F199D007C00A7A5D7 /* RGCoreDataStack.h */,
+				28E45920199D007C00A7A5D7 /* RGCoreDataStack.m */,
 				28E458F2199CFBFD00A7A5D7 /* Main.storyboard */,
 				28E458F8199CFBFD00A7A5D7 /* MainViewController.h */,
 				28E458F9199CFBFD00A7A5D7 /* MainViewController.m */,
 				28E458FB199CFBFD00A7A5D7 /* FlipsideViewController.h */,
 				28E458FC199CFBFD00A7A5D7 /* FlipsideViewController.m */,
 				28E458FE199CFBFD00A7A5D7 /* Images.xcassets */,
+				28E4592C199D06A500A7A5D7 /* Person.h */,
+				28E4592D199D06A500A7A5D7 /* Person.m */,
 				28E458F5199CFBFD00A7A5D7 /* migrationCheck.xcdatamodeld */,
 				28E458E7199CFBFD00A7A5D7 /* Supporting Files */,
 			);
@@ -264,6 +275,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				28E458F1199CFBFD00A7A5D7 /* AppDelegate.m in Sources */,
+				28E45921199D007C00A7A5D7 /* RGCoreDataStack.m in Sources */,
+				28E4592E199D06A500A7A5D7 /* Person.m in Sources */,
 				28E458F7199CFBFD00A7A5D7 /* migrationCheck.xcdatamodeld in Sources */,
 				28E458ED199CFBFD00A7A5D7 /* main.m in Sources */,
 				28E458FD199CFBFD00A7A5D7 /* FlipsideViewController.m in Sources */,
@@ -487,9 +500,10 @@
 		28E458F5199CFBFD00A7A5D7 /* migrationCheck.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				28E45922199D03D700A7A5D7 /* migrationCheck 2.xcdatamodel */,
 				28E458F6199CFBFD00A7A5D7 /* migrationCheck.xcdatamodel */,
 			);
-			currentVersion = 28E458F6199CFBFD00A7A5D7 /* migrationCheck.xcdatamodel */;
+			currentVersion = 28E45922199D03D700A7A5D7 /* migrationCheck 2.xcdatamodel */;
 			path = migrationCheck.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

@@ -7,6 +7,8 @@
 //
 
 #import "MainViewController.h"
+#import "Person.h"
+#import "RGCoreDataStack.h"
 
 @interface MainViewController ()
 
@@ -18,6 +20,17 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    NSManagedObjectContext *managedObjectContext = [RGCoreDataStack sharedDataStack].managedObjectContext;
+    
+    
+    Person *newPerson =  [NSEntityDescription insertNewObjectForEntityForName:@"Person" inManagedObjectContext:managedObjectContext ];
+    newPerson.age = [NSNumber numberWithInt:10];
+    newPerson.name = @"First Name";
+    newPerson.power = @100;
+    
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
