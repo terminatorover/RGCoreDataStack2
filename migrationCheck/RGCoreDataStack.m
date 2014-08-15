@@ -101,9 +101,12 @@
     }
 }
 
-- (void)inBackgroundPerformBlock:(void (^)(void))blockName
+- (void)inBackgroundPerformBlock:(void (^)(void))executionBlock
 {
-    
+    dispatch_queue_t concurrentQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_async(concurrentQueue,executionBlock);
+    [self saveBackgroundContext];
+        
 }
 
 // Returns the managed object model for the application.

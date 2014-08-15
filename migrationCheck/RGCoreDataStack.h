@@ -15,7 +15,7 @@
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 @property (nonatomic) NSManagedObjectContext *backgroundObjectContext; 
 - (void)saveContext;
-- (void)inBackgroundPerformBlock:(void (^)(void))completionBlock;
+- (void)inBackgroundPerformBlock:(void (^)(void))executionBlock;
 
 - (NSURL *)applicationDocumentsDirectory;
 + (instancetype)sharedDataStack;
