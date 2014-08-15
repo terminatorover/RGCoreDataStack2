@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2861FD45199D8D0300CCFF1D /* RGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2861FD44199D8D0300CCFF1D /* RGViewController.m */; };
 		28E458DF199CFBFD00A7A5D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28E458DE199CFBFD00A7A5D7 /* Foundation.framework */; };
 		28E458E1199CFBFD00A7A5D7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28E458E0199CFBFD00A7A5D7 /* CoreGraphics.framework */; };
 		28E458E3199CFBFD00A7A5D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28E458E2199CFBFD00A7A5D7 /* UIKit.framework */; };
@@ -16,8 +17,6 @@
 		28E458F1199CFBFD00A7A5D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E458F0199CFBFD00A7A5D7 /* AppDelegate.m */; };
 		28E458F4199CFBFD00A7A5D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28E458F2199CFBFD00A7A5D7 /* Main.storyboard */; };
 		28E458F7199CFBFD00A7A5D7 /* migrationCheck.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28E458F5199CFBFD00A7A5D7 /* migrationCheck.xcdatamodeld */; };
-		28E458FA199CFBFD00A7A5D7 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E458F9199CFBFD00A7A5D7 /* MainViewController.m */; };
-		28E458FD199CFBFD00A7A5D7 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E458FC199CFBFD00A7A5D7 /* FlipsideViewController.m */; };
 		28E458FF199CFBFD00A7A5D7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28E458FE199CFBFD00A7A5D7 /* Images.xcassets */; };
 		28E45906199CFBFD00A7A5D7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28E45905199CFBFD00A7A5D7 /* XCTest.framework */; };
 		28E45907199CFBFD00A7A5D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28E458DE199CFBFD00A7A5D7 /* Foundation.framework */; };
@@ -26,7 +25,6 @@
 		28E45911199CFBFE00A7A5D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 28E4590F199CFBFE00A7A5D7 /* InfoPlist.strings */; };
 		28E45913199CFBFE00A7A5D7 /* migrationCheckTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E45912199CFBFE00A7A5D7 /* migrationCheckTests.m */; };
 		28E45921199D007C00A7A5D7 /* RGCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E45920199D007C00A7A5D7 /* RGCoreDataStack.m */; };
-		28E4592E199D06A500A7A5D7 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E4592D199D06A500A7A5D7 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,34 +38,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		28E458DB199CFBFD00A7A5D7 /* migrationCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = migrationCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2861FD43199D8D0300CCFF1D /* RGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGViewController.h; sourceTree = "<group>"; };
+		2861FD44199D8D0300CCFF1D /* RGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGViewController.m; sourceTree = "<group>"; };
+		28E458DB199CFBFD00A7A5D7 /* CoreDataStack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataStack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28E458DE199CFBFD00A7A5D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		28E458E0199CFBFD00A7A5D7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		28E458E2199CFBFD00A7A5D7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		28E458E4199CFBFD00A7A5D7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		28E458E8199CFBFD00A7A5D7 /* migrationCheck-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "migrationCheck-Info.plist"; sourceTree = "<group>"; };
+		28E458E8199CFBFD00A7A5D7 /* CoreDataStack-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreDataStack-Info.plist"; sourceTree = "<group>"; };
 		28E458EA199CFBFD00A7A5D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		28E458EC199CFBFD00A7A5D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		28E458EE199CFBFD00A7A5D7 /* migrationCheck-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "migrationCheck-Prefix.pch"; sourceTree = "<group>"; };
+		28E458EE199CFBFD00A7A5D7 /* CoreDataStack-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreDataStack-Prefix.pch"; sourceTree = "<group>"; };
 		28E458EF199CFBFD00A7A5D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		28E458F0199CFBFD00A7A5D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		28E458F3199CFBFD00A7A5D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28E458F6199CFBFD00A7A5D7 /* migrationCheck.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = migrationCheck.xcdatamodel; sourceTree = "<group>"; };
-		28E458F8199CFBFD00A7A5D7 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		28E458F9199CFBFD00A7A5D7 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		28E458FB199CFBFD00A7A5D7 /* FlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipsideViewController.h; sourceTree = "<group>"; };
-		28E458FC199CFBFD00A7A5D7 /* FlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
 		28E458FE199CFBFD00A7A5D7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		28E45904199CFBFD00A7A5D7 /* migrationCheckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = migrationCheckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28E45904199CFBFD00A7A5D7 /* CoreDataStackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataStackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28E45905199CFBFD00A7A5D7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		28E4590E199CFBFE00A7A5D7 /* migrationCheckTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "migrationCheckTests-Info.plist"; sourceTree = "<group>"; };
+		28E4590E199CFBFE00A7A5D7 /* CoreDataStackTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreDataStackTests-Info.plist"; sourceTree = "<group>"; };
 		28E45910199CFBFE00A7A5D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		28E45912199CFBFE00A7A5D7 /* migrationCheckTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = migrationCheckTests.m; sourceTree = "<group>"; };
 		28E4591F199D007C00A7A5D7 /* RGCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGCoreDataStack.h; sourceTree = "<group>"; };
 		28E45920199D007C00A7A5D7 /* RGCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGCoreDataStack.m; sourceTree = "<group>"; };
 		28E45922199D03D700A7A5D7 /* migrationCheck 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "migrationCheck 2.xcdatamodel"; sourceTree = "<group>"; };
-		28E4592C199D06A500A7A5D7 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		28E4592D199D06A500A7A5D7 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +103,8 @@
 		28E458DC199CFBFD00A7A5D7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				28E458DB199CFBFD00A7A5D7 /* migrationCheck.app */,
-				28E45904199CFBFD00A7A5D7 /* migrationCheckTests.xctest */,
+				28E458DB199CFBFD00A7A5D7 /* CoreDataStack.app */,
+				28E45904199CFBFD00A7A5D7 /* CoreDataStackTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,13 +129,9 @@
 				28E4591F199D007C00A7A5D7 /* RGCoreDataStack.h */,
 				28E45920199D007C00A7A5D7 /* RGCoreDataStack.m */,
 				28E458F2199CFBFD00A7A5D7 /* Main.storyboard */,
-				28E458F8199CFBFD00A7A5D7 /* MainViewController.h */,
-				28E458F9199CFBFD00A7A5D7 /* MainViewController.m */,
-				28E458FB199CFBFD00A7A5D7 /* FlipsideViewController.h */,
-				28E458FC199CFBFD00A7A5D7 /* FlipsideViewController.m */,
+				2861FD43199D8D0300CCFF1D /* RGViewController.h */,
+				2861FD44199D8D0300CCFF1D /* RGViewController.m */,
 				28E458FE199CFBFD00A7A5D7 /* Images.xcassets */,
-				28E4592C199D06A500A7A5D7 /* Person.h */,
-				28E4592D199D06A500A7A5D7 /* Person.m */,
 				28E458F5199CFBFD00A7A5D7 /* migrationCheck.xcdatamodeld */,
 				28E458E7199CFBFD00A7A5D7 /* Supporting Files */,
 			);
@@ -151,10 +141,10 @@
 		28E458E7199CFBFD00A7A5D7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				28E458E8199CFBFD00A7A5D7 /* migrationCheck-Info.plist */,
+				28E458E8199CFBFD00A7A5D7 /* CoreDataStack-Info.plist */,
 				28E458E9199CFBFD00A7A5D7 /* InfoPlist.strings */,
 				28E458EC199CFBFD00A7A5D7 /* main.m */,
-				28E458EE199CFBFD00A7A5D7 /* migrationCheck-Prefix.pch */,
+				28E458EE199CFBFD00A7A5D7 /* CoreDataStack-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -171,7 +161,7 @@
 		28E4590D199CFBFE00A7A5D7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				28E4590E199CFBFE00A7A5D7 /* migrationCheckTests-Info.plist */,
+				28E4590E199CFBFE00A7A5D7 /* CoreDataStackTests-Info.plist */,
 				28E4590F199CFBFE00A7A5D7 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -180,9 +170,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		28E458DA199CFBFD00A7A5D7 /* migrationCheck */ = {
+		28E458DA199CFBFD00A7A5D7 /* CoreDataStack */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28E45916199CFBFE00A7A5D7 /* Build configuration list for PBXNativeTarget "migrationCheck" */;
+			buildConfigurationList = 28E45916199CFBFE00A7A5D7 /* Build configuration list for PBXNativeTarget "CoreDataStack" */;
 			buildPhases = (
 				28E458D7199CFBFD00A7A5D7 /* Sources */,
 				28E458D8199CFBFD00A7A5D7 /* Frameworks */,
@@ -192,14 +182,14 @@
 			);
 			dependencies = (
 			);
-			name = migrationCheck;
+			name = CoreDataStack;
 			productName = migrationCheck;
-			productReference = 28E458DB199CFBFD00A7A5D7 /* migrationCheck.app */;
+			productReference = 28E458DB199CFBFD00A7A5D7 /* CoreDataStack.app */;
 			productType = "com.apple.product-type.application";
 		};
-		28E45903199CFBFD00A7A5D7 /* migrationCheckTests */ = {
+		28E45903199CFBFD00A7A5D7 /* CoreDataStackTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28E45919199CFBFE00A7A5D7 /* Build configuration list for PBXNativeTarget "migrationCheckTests" */;
+			buildConfigurationList = 28E45919199CFBFE00A7A5D7 /* Build configuration list for PBXNativeTarget "CoreDataStackTests" */;
 			buildPhases = (
 				28E45900199CFBFD00A7A5D7 /* Sources */,
 				28E45901199CFBFD00A7A5D7 /* Frameworks */,
@@ -210,9 +200,9 @@
 			dependencies = (
 				28E4590B199CFBFE00A7A5D7 /* PBXTargetDependency */,
 			);
-			name = migrationCheckTests;
+			name = CoreDataStackTests;
 			productName = migrationCheckTests;
-			productReference = 28E45904199CFBFD00A7A5D7 /* migrationCheckTests.xctest */;
+			productReference = 28E45904199CFBFD00A7A5D7 /* CoreDataStackTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -229,7 +219,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 28E458D6199CFBFD00A7A5D7 /* Build configuration list for PBXProject "migrationCheck" */;
+			buildConfigurationList = 28E458D6199CFBFD00A7A5D7 /* Build configuration list for PBXProject "CoreDataStack" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -242,8 +232,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				28E458DA199CFBFD00A7A5D7 /* migrationCheck */,
-				28E45903199CFBFD00A7A5D7 /* migrationCheckTests */,
+				28E458DA199CFBFD00A7A5D7 /* CoreDataStack */,
+				28E45903199CFBFD00A7A5D7 /* CoreDataStackTests */,
 			);
 		};
 /* End PBXProject section */
@@ -274,13 +264,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2861FD45199D8D0300CCFF1D /* RGViewController.m in Sources */,
 				28E458F1199CFBFD00A7A5D7 /* AppDelegate.m in Sources */,
 				28E45921199D007C00A7A5D7 /* RGCoreDataStack.m in Sources */,
-				28E4592E199D06A500A7A5D7 /* Person.m in Sources */,
 				28E458F7199CFBFD00A7A5D7 /* migrationCheck.xcdatamodeld in Sources */,
 				28E458ED199CFBFD00A7A5D7 /* main.m in Sources */,
-				28E458FD199CFBFD00A7A5D7 /* FlipsideViewController.m in Sources */,
-				28E458FA199CFBFD00A7A5D7 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +285,7 @@
 /* Begin PBXTargetDependency section */
 		28E4590B199CFBFE00A7A5D7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 28E458DA199CFBFD00A7A5D7 /* migrationCheck */;
+			target = 28E458DA199CFBFD00A7A5D7 /* CoreDataStack */;
 			targetProxy = 28E4590A199CFBFE00A7A5D7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -406,9 +394,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "migrationCheck/migrationCheck-Prefix.pch";
-				INFOPLIST_FILE = "migrationCheck/migrationCheck-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "migrationCheck/CoreDataStack-Prefix.pch";
+				INFOPLIST_FILE = "migrationCheck/CoreDataStack-Info.plist";
+				PRODUCT_NAME = CoreDataStack;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -419,9 +407,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "migrationCheck/migrationCheck-Prefix.pch";
-				INFOPLIST_FILE = "migrationCheck/migrationCheck-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "migrationCheck/CoreDataStack-Prefix.pch";
+				INFOPLIST_FILE = "migrationCheck/CoreDataStack-Info.plist";
+				PRODUCT_NAME = CoreDataStack;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -441,8 +429,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "migrationCheckTests/migrationCheckTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "migrationCheckTests/CoreDataStackTests-Info.plist";
+				PRODUCT_NAME = CoreDataStackTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -459,8 +447,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "migrationCheck/migrationCheck-Prefix.pch";
-				INFOPLIST_FILE = "migrationCheckTests/migrationCheckTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "migrationCheckTests/CoreDataStackTests-Info.plist";
+				PRODUCT_NAME = CoreDataStackTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -469,7 +457,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		28E458D6199CFBFD00A7A5D7 /* Build configuration list for PBXProject "migrationCheck" */ = {
+		28E458D6199CFBFD00A7A5D7 /* Build configuration list for PBXProject "CoreDataStack" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28E45914199CFBFE00A7A5D7 /* Debug */,
@@ -478,21 +466,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		28E45916199CFBFE00A7A5D7 /* Build configuration list for PBXNativeTarget "migrationCheck" */ = {
+		28E45916199CFBFE00A7A5D7 /* Build configuration list for PBXNativeTarget "CoreDataStack" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28E45917199CFBFE00A7A5D7 /* Debug */,
 				28E45918199CFBFE00A7A5D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		28E45919199CFBFE00A7A5D7 /* Build configuration list for PBXNativeTarget "migrationCheckTests" */ = {
+		28E45919199CFBFE00A7A5D7 /* Build configuration list for PBXNativeTarget "CoreDataStackTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28E4591A199CFBFE00A7A5D7 /* Debug */,
 				28E4591B199CFBFE00A7A5D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

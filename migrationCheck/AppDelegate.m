@@ -7,8 +7,6 @@
 //
 
 #import "AppDelegate.h"
-
-#import "MainViewController.h"
 #import "RGCoreDataStack.h"
 @implementation AppDelegate
 

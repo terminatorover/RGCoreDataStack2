@@ -1,18 +1,13 @@
 //
-//  Person.m
+//  RGViewController.h
 //  migrationCheck
 //
 //  Created by Vensi Developer on 8/14/14.
 //  Copyright (c) 2014 EnterWithBoldness. All rights reserved.
 //
 
-#import "Person.h"
+#import <UIKit/UIKit.h>
 
-
-@implementation Person
-
-@dynamic age;
-@dynamic name;
-@dynamic power;
+@interface RGViewController : UIViewController
 
 @end

@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "28E458DA199CFBFD00A7A5D7"
                BuildableName = "migrationCheck.app"
-               BlueprintName = "migrationCheck"
-               ReferencedContainer = "container:migrationCheck.xcodeproj">
+               BlueprintName = "CoreDataStack"
+               ReferencedContainer = "container:CoreDataStack.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "28E45903199CFBFD00A7A5D7"
                BuildableName = "migrationCheckTests.xctest"
-               BlueprintName = "migrationCheckTests"
-               ReferencedContainer = "container:migrationCheck.xcodeproj">
+               BlueprintName = "CoreDataStackTests"
+               ReferencedContainer = "container:CoreDataStack.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,8 +44,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "28E458DA199CFBFD00A7A5D7"
             BuildableName = "migrationCheck.app"
-            BlueprintName = "migrationCheck"
-            ReferencedContainer = "container:migrationCheck.xcodeproj">
+            BlueprintName = "CoreDataStack"
+            ReferencedContainer = "container:CoreDataStack.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -63,8 +63,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "28E458DA199CFBFD00A7A5D7"
             BuildableName = "migrationCheck.app"
-            BlueprintName = "migrationCheck"
-            ReferencedContainer = "container:migrationCheck.xcodeproj">
+            BlueprintName = "CoreDataStack"
+            ReferencedContainer = "container:CoreDataStack.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -81,8 +81,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "28E458DA199CFBFD00A7A5D7"
             BuildableName = "migrationCheck.app"
-            BlueprintName = "migrationCheck"
-            ReferencedContainer = "container:migrationCheck.xcodeproj">
+            BlueprintName = "CoreDataStack"
+            ReferencedContainer = "container:CoreDataStack.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
