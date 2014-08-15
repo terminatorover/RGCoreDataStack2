@@ -75,38 +75,35 @@
 }
 
 #pragma mark - method realted to background context and interaction to main context
-- (NSManagedObjectContext * )backgroundObjectContext
-{
-    if(!_backgroundObjectContext)
-    {
-        _backgroundObjectContext = [[NSManagedObjectContext alloc ]init];
-        _backgroundObjectContext.persistentStoreCoordinator = _persistentStoreCoordinator;
-        
-    }
-    
-    return _backgroundObjectContext;
-}
 
-- (void)saveBackgroundContext
-{
-    NSError *error = nil;
-    NSManagedObjectContext *managedObjectContext = self.backgroundObjectContext;
-    if (managedObjectContext != nil) {
-        if ([managedObjectContext hasChanges] && ![managedObjectContext save:&error]) {
-            // Replace this implementation with code to handle the error appropriately.
-            // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-            NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-            abort();
-        }
-    }
-}
+
 
 - (void)inBackgroundPerformBlock:(void (^)(void))executionBlock
 {
+    
     dispatch_queue_t concurrentQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-    dispatch_async(concurrentQueue,executionBlock);
-    [self saveBackgroundContext];
+    
+    dispatch_async(concurrentQueue,^{
+        NSManagedObjectContext *backgroundObjectContext = [[NSManagedObjectContext alloc ]init];
+        backgroundObjectContext.persistentStoreCoordinator = _persistentStoreCoordinator;
         
+        dispatch_sync(concurrentQueue,executionBlock);
+        
+        
+        dispatch_sync(concurrentQueue, ^{
+            NSError *error = nil;
+            if (backgroundObjectContext != nil)
+            {
+                if ([backgroundObjectContext hasChanges] && ![backgroundObjectContext save:&error]) {
+                    NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+                    
+                }
+            }
+            
+        });
+        
+    });
+    
 }
 
 // Returns the managed object model for the application.
@@ -162,7 +159,7 @@
          
          */
         NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-        abort();
+
     }
     
     return _persistentStoreCoordinator;
